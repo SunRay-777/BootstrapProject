@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Travel Agency</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">DreamTravel</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <!-- Hero Section -->
+<section class="text-white text-center d-flex align-items-center justify-content-center" 
+         style="height: 70vh; background: url('clouds.jpg') center/cover no-repeat;">
+  <div>
+    <h1>Explore The World With Us</h1>
+    <p class="lead">Your adventure starts here</p>
+    <button class="btn btn-light btn-lg mt-3">Book Now</button>
+  </div>
+</section>
+
+
+  <!-- Destinations Section -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Top Destinations</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="paris.jpg" class="card-img-top" alt="Paris">
+          <div class="card-body">
+            <h5 class="card-title">Paris</h5>
+            <p class="card-text">Discover the city of lights and romance.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="bali.jpg" class="card-img-top" alt="Bali">
+          <div class="card-body">
+            <h5 class="card-title">Bali</h5>
+            <p class="card-text">Relax on stunning beaches and enjoy tropical vibes.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="newyork.jpg" class="card-img-top" alt="New York">
+          <div class="card-body">
+            <h5 class="card-title">New York</h5>
+            <p class="card-text">Experience the energy of the Big Apple.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tours Section (Accordion) -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Our Tours</h2>
+    <div class="accordion" id="toursAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="tourOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            European Highlights
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#toursAccordion">
+          <div class="accordion-body">
+            Explore multiple European cities in one trip. <a href="#">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="tourTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Tropical Escape
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#toursAccordion">
+          <div class="accordion-body">
+            Relax in Bali, Maldives, and more. <a href="#">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="tourThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            American Adventure
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#toursAccordion">
+          <div class="accordion-body">
+            Discover New York, Los Angeles, and Chicago. <a href="#">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form>
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Your Name">
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Your Email">
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Destination of Interest">
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-3">
+    <p>&copy; 2026 DreamTravel | Follow us on 
+      <i class="bi bi-facebook"></i> 
+      <i class="bi bi-twitter"></i> 
+      <i class="bi bi-instagram"></i>
+    </p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
